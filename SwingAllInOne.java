@@ -16,7 +16,7 @@ public class SwingAllInOne extends JFrame{
         JTextField textField=new JTextField(15);
         add(textField);
 
-        JCheckbox textArea=new JCheckBox(5,20);
+        JCheckbox textArea=new JCheckbox(5,20);
         JScrollPane textScrollPane=new JScrollPane(textArea);
         add(textScrollPane);
 

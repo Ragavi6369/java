@@ -3,8 +3,9 @@ import java.io.ObjectOutputStream;
 
 public class Serialize2 {
     public static void main(String[] args) {
-       try {
-            Employee employee = new Employee(1, "John Doe",20000,2,24);
+        Employee3 enoloyee = new Employee3(1, "John Doe",20000,2,24);
+
+        try {
             FileOutputStream fileOut = new FileOutputStream("Employee.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(employee);

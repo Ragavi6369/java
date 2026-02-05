@@ -16,22 +16,18 @@ public class SwingAllInOne extends JFrame{
         JTextField textField=new JTextField(15);
         add(textField);
 
-        JCheckBox checkBox = new JCheckBox("Accept Terms");
-        add(checkBox);
-
-        JTextArea textArea=new JTextArea(5,20);
+        JCheckbox textArea=new JCheckBox(5,20);
         JScrollPane textScrollPane=new JScrollPane(textArea);
         add(textScrollPane);
 
         JButton button=new JButton("Show Message");
         add(button);
-
-        button.addActionListener(e-> {
-            String name = textField.getText();
-            boolean accepted = checkBox.isSelected();
+        button.addActionListener(e->{
+            String name=textField.getText();
+            boolean accepted=CheckBox.inSelected();
             JOptionPane.showMessageDialog(this,
-                "Name:"+name+"\nAccepted:"+accepted,
-                "Info",JOptionPane.INFORMATION_MESSAGE);
+            "Name:"+name+"\nAccepted:"+accepted,
+            "Info",JOptionPane.INFORMATION_MESSAGE);
         });
         String[] columns={"ID","Name"};
         String[][] date={
